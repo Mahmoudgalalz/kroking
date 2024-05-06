@@ -1,6 +1,9 @@
 ---
 import Nav from "../components/Nav.tsx"
+import '@/styles/globals.css'
+import { ViewTransitions } from 'astro:transitions';
 const { title } = Astro.props;
+const path = Astro.url.pathname;
 ---
 <html lang="en">
   <head>
@@ -8,10 +11,13 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<ViewTransitions />
 		<title>Kroking | {title}</title>
 	</head>
-  <body class="lg:container mx-6 mt-10">
-    <Nav client:only="React" />
-    <slot />
+  <body class="lg:container mt-10 max-sm:mx-4 mx-48">
+    <Nav client:load path={path} />
+    <div transition:animate="fade" class="sm:mx-52 mx-4 mt-6">
+			<slot />
+		</div>
   </body>
 </html>

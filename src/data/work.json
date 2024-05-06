@@ -1,0 +1,23 @@
+[
+  {
+    "company":"Onboardbase",
+    "title":"Software Engineer",
+    "stack":"Typescript, Nextjs, NuxtJS, NestJS, Go, Nginx, VueJs, React, AWS, CloudFlare Workers, Github Actions",
+    "description":"I joined onboardbase as a DevRel to open source some of their in-house tools, moved to Engineering to build and maintaine some of their projects where we build tools for developers and compaines to secure their secrets, Maintained Nudgeer, its package and github-action, to 3rd top product on PH which is hi.new",
+    "location":"USA, Florida - Remote",
+    "start":"Aug 2023",
+    "end":"Present",
+    "contributions":[
+
+    ]
+  },
+  {
+    "company":"Brandria",
+    "title":"Software Engineer",
+    "stack":"Typescript, PHP, Laravel, JQuery, web-components, Nextjs, Strapi, React Query, Nginx, Github Actions",
+    "description":"I worked there in many projects",
+    "location":"Egypt, Maadi",
+    "start":"Aug 2023",
+    "end":"Dec 2023"
+  }
+]

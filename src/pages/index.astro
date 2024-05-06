@@ -1,7 +1,36 @@
 ---
-import '@/styles/globals.css'
 import Layout from '../layouts/Layout.astro'
+import { Icon } from 'astro-icon/components';
+
+const social = [
+	{
+		icon: "mdi:twitter-x-fill",
+		href: 'https://x.com/eitmg'
+	},
+	{
+		icon: "mdi:linkedin-box-fill",
+		href: 'https://linkedin.com/in/mahmoudgalalz'
+	},
+	{
+		icon: "mdi:github",
+		href: 'https://github.com/mahmoudgalalz'
+	},
+	{
+		icon: "mdi:twitter-x-fill",
+		href: 'https://x.com/eitmg'
+	},
+]
 ---
 <Layout title="Show">
-	<h1>Hi</h1>
+	<section class="flex flex-col text-white/70 leading-5 space-y-1  text-sm font-light mt-10 ">
+		<p>I am a software engineer with 2 years of experenice developing and building full-stack apps.</p>
+		<p>I have diversity of learning and finding solutions </p>
+	</section>
+	<section>
+		<ul>
+			{social.map(social=>{
+				return <a href={social.href} target="_blank"></a>
+			})}
+		</ul>
+	</section>
 </Layout>
