@@ -8,10 +8,29 @@ const path = Astro.url.pathname;
 <html lang="en">
   <head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<ViewTransitions />
+		<meta name="description" content="Kroking's website, a Software Engineer">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://kroking.dev/">
+<meta property="og:type" content="website">
+<meta property="og:title" content=`Kroking | ${title}`>
+<meta property="og:description" content="Kroking's website, a Software Engineer">
+<meta property="og:image" content="/og.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="kroking.dev">
+<meta property="twitter:url" content="https://kroking.dev/">
+<meta name="twitter:title" content="Kroking | Main">
+<meta name="twitter:description" content="Kroking's website, a Software Engineer">
+<meta name="twitter:image" content="/og.png">
 		<title>Kroking | {title}</title>
 	</head>
   <body class="lg:container mt-10 max-sm:mx-4 mx-48">

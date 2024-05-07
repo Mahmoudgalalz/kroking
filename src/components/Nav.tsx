@@ -11,7 +11,7 @@ import {
 import BookMeet from "./BookMeet"
 
 export default function Nav({path}:{path:string}){
-  console.log(path)
+  console.log(path.substring(0,path.length-1))
   const pages = [
     {
       href:'/',
@@ -47,8 +47,7 @@ export default function Nav({path}:{path:string}){
         <ul className="flex space-x-0.5 font-bold text-xs">
           {pages.map(page=>{
             return (
-              <a className={`py-1.5 px-4 hover:bg-white/10 duration-200 ${page.href === path ? 'bg-white/10' : ''}`} href={page.href}>{page.title}</a>
-
+              <a className={`py-1.5 px-4 hover:bg-white/10 duration-200 ${page.href === path.substring(0,path.length-1) ? 'bg-white/10' : ''}`} href={page.href}>{page.title}</a>
             )
           })}
         </ul>
