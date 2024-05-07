@@ -8,16 +8,30 @@
     "start":"Aug 2023",
     "end":"Present",
     "contributions":[
-
+      "Built https://hi.new",
+      "Built Nudgeer SDK to improve security development",
+      "Built encryption storage with its SDK",
+      "Improved Nudgeer performance",
+      "Improved Error Handling in Onboardbase CLI"
     ]
   },
   {
     "company":"Brandria",
     "title":"Software Engineer",
     "stack":"Typescript, PHP, Laravel, JQuery, web-components, Nextjs, Strapi, React Query, Nginx, Github Actions",
-    "description":"I worked there in many projects",
+    "description":"My first job, where I maintained a huge Banking Project built with PHP and lagacy UI with JQuery, built and architecting a Mental health website that serve 100K user in MENA Region, where I toke decisions which stack and how the Infra would be designed and building cost-effective infra and automation.",
     "location":"Egypt, Maadi",
     "start":"Aug 2023",
-    "end":"Dec 2023"
+    "end":"Dec 2023",
+    "contributions":[
+      "Built https://salamy.space",
+      "Improved Albarak Banking website from 35sec to 1.4sec",
+      "Created EG-DATA Infra, Managed by CAPMAS https://www.capmas.gov.eg/Pages/videodata2.aspx",
+      "Introduced Github Actions for CI Automation",
+      "Built a Development team for Salamy",
+      "Built a custom WYSIWYG on Strapi CMS",
+      "Built a Dyanmic Open-graph service that serve 14 Project",
+      "Created a plugin to help wordpress developers to automate google Tag creation"
+    ]
   }
 ]

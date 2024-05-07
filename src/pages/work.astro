@@ -3,15 +3,15 @@ import Layout from '../layouts/Layout.astro'
 import WorkCard from "../components/Work.tsx"
 import Hire from "../components/Hire.tsx"
 import experiences from "../data/work.json"
-console.log(experiences)
+
 ---
-<Layout title="Show">
+<Layout title="Employment History">
   <h1 class="font-bold">Employment History</h1>
   <section class="flex flex-col text-white/70 leading-5 tracking-wide space-y-1  text-sm font-light mt-4 ">
 		<p>I have been professionally working for more than 2 years.
 		Where I built apps form scratch in different tech stacks, also working on tooling products that improve developers experience, and security tools.</p>
 	</section>
-  <div class="flex flex-col mt-10 gap-3">
+  <div class="flex flex-col my-10 gap-3">
     <Hire client:only="React"/>
     {experiences.map(experience=>{
       return <WorkCard client:load experience={experience} />

@@ -23,8 +23,7 @@ export default function Hire() {
       })
     })
     const res = await req.json()
-    console.log(req);
-    // Handle form submission logic here
+    console.log(res);
   };
 
   return (
@@ -34,7 +33,7 @@ export default function Hire() {
         <div>Full-time, Contract</div>
       </div>
       <div className="flex flex-col space-y-1 h-fit">
-        <div className="flex space-x-4">
+        <div className="flex max-sm:flex-col max-sm:space-y-2 sm:space-x-4">
         <input type="text" {...register("fullName")} placeholder="Subject" className="text-gray-200/40 placeholder:text-gray-200/40 bg-white/5 rounded-lg text-xs py-1 px-1.5" />
         
         <input type="email" {...register("email")} placeholder="Email" className="text-gray-200/40 placeholder:text-gray-200/40 bg-white/5 rounded-lg text-xs py-1 px-1.5" />

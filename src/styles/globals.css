@@ -44,3 +44,10 @@
       @apply bg-background text-foreground;
     }
   }
+  .contributions {
+    list-style-type: none;
+    padding-left: 20px;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }

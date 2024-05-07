@@ -3,33 +3,48 @@ import Layout from '../layouts/Layout.astro'
 import { Icon } from 'astro-icon/components';
 
 const social = [
-	{
-		icon: "mdi:twitter-x-fill",
-		href: 'https://x.com/eitmg'
-	},
-	{
-		icon: "mdi:linkedin-box-fill",
-		href: 'https://linkedin.com/in/mahmoudgalalz'
-	},
-	{
-		icon: "mdi:github",
-		href: 'https://github.com/mahmoudgalalz'
-	},
-	{
-		icon: "mdi:twitter-x-fill",
-		href: 'https://x.com/eitmg'
-	},
+{
+    icon: `
+		<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16"><path fill="currentColor" d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07l-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg>
+    `,
+    href: 'https://x.com/eitmg'
+  },
+  {
+    icon: `
+		<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M1 2.838A1.838 1.838 0 0 1 2.838 1H21.16A1.837 1.837 0 0 1 23 2.838V21.16A1.838 1.838 0 0 1 21.161 23H2.838A1.838 1.838 0 0 1 1 21.161zm8.708 6.55h2.979v1.496c.43-.86 1.53-1.634 3.183-1.634c3.169 0 3.92 1.713 3.92 4.856v5.822h-3.207v-5.106c0-1.79-.43-2.8-1.522-2.8c-1.515 0-2.145 1.089-2.145 2.8v5.106H9.708zm-5.5 10.403h3.208V9.25H4.208zM7.875 5.812a2.063 2.063 0 1 1-4.125 0a2.063 2.063 0 0 1 4.125 0" clip-rule="evenodd"/></svg>
+    `,
+    href: 'https://linkedin.com/in/mahmoudgalalz'
+  },
+  {
+    icon: `
+		<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 448 512"><path fill="currentColor" d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64zM265.8 407.7c0-1.8 0-6 .1-11.6c.1-11.4.1-28.8.1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1 76-9.2 76-73.1c0-18.2-6.5-27.3-17.1-39c1.7-4.3 7.4-22-1.7-45c-13.9-4.3-45.7 17.9-45.7 17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9c-9.1 22.9-3.5 40.6-1.7 45c-10.6 11.7-15.6 20.8-15.6 39c0 63.6 37.3 69 74.3 73.1c-4.8 4.3-9.1 11.7-10.6 22.3c-9.5 4.3-33.8 11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-.2-1.1 10.2-1.1 10.2c10.8 5 18.4 24.2 18.4 24.2c9.7 29.7 56.1 19.7 56.1 19.7c0 9 .1 21.7.1 30.6c0 4.8.1 8.6.1 10c0 4.3-3 9.5-11.5 8c-66-22.1-112.2-84.9-112.2-158.3c0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3c-8.4 1.5-11.5-3.7-11.5-8m-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2c1.9-.2 3.7.6 3.9 1.9c.3 1.3-1 2.6-3 3c-1.9.4-3.7-.4-3.9-1.7m-9.1 3.2c-2.2.2-3.7-.9-3.7-2.4c0-1.3 1.5-2.4 3.5-2.4c1.9-.2 3.7.9 3.7 2.4c0 1.3-1.5 2.4-3.5 2.4m-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4c-.4 1.3-2.4 1.9-4.1 1.3m-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1c.9-1.1 2.8-.9 4.3.6c1.3 1.3 1.8 3.3.9 4.1c-.9 1.1-2.8.9-4.3-.6m-8.5-10c-1.1-1.5-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3c1.1 1.5 1.1 3.3 0 4.1c-.9.6-2.6 0-3.7-1.5m-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5c.9-.9 2.4-.4 3.5.6c1.1 1.3 1.3 2.8.4 3.5c-.9.9-2.4.4-3.5-.6m-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6c.4-.6 1.5-.9 2.8-.4c1.3.7 1.9 1.8 1.5 2.6c-.4.9-1.7 1.1-2.8.4"/></svg>
+    `,
+    href: 'https://github.com/mahmoudgalalz'
+  },
 ]
 ---
-<Layout title="Show">
-	<section class="flex flex-col text-white/70 leading-5 space-y-1  text-sm font-light mt-10 ">
+<Layout title="Main">
+	<section class="flex flex-col text-white/70 leading-5 space-y-3  text-sm font-light mt-10 ">
 		<p>I am a software engineer with 2 years of experenice developing and building full-stack apps.</p>
-		<p>I have diversity of learning and finding solutions </p>
+		<p>I Like coffee, but I like exploring new tech more.</p>
+		<p>Over the past years I have worked with different tech stacks, Typescript, Javascript, Go, C++, React, NestJS, AWS, Postgres, MongoDB, Electron, SQL, Docker, Terrafrom, Nginx, Vue, NextJS, AstroJS, in different domains including dev-tools, Security, Healthcare, B2B.</p>
+		<p>I enjoy figuring out new things about the Web Platform, that why you might see me talk a lot about Web, cause I have a fortune experenice in it.</p>
+		<p>I keep my eyse always on faster execution, but with preformance and quality.</p>
+		<p>I keen a lot of interest in SRE and building monitoring tools, and dealing with systems and infra, I adore SSH a machine and configure it, with a lot of love of <span class="text-emerald-600">automating the task that take a 2 min</span>, to build a script that takes 5h of my time 😂.</p>
 	</section>
+	
+	<div class="my-2 border bg-white-5 flex"></div>
+	<section class="flex flex-col space-y-2">
+		<h1 class="text-sm">I'm intersted into investment into small teams, from 1k to 5k.</h1>
+		<h1 class="text-white/70 text-xs">so reach me out if you are looking for a tiny Angle Investor and also a tiny software consultant</h1>
+	</section>
+	<div class="my-2 border bg-white-5 flex"></div>
 	<section>
-		<ul>
+		<ul class="flex items-center justify-center text-xs space-x-2">
 			{social.map(social=>{
-				return <a href={social.href} target="_blank"></a>
+				return <a href={social.href} rel="noopener noreferrer" target="_blank">
+					<div class="w-6 h-6" set:html={social.icon}></div>
+				</a>
 			})}
 		</ul>
 	</section>
