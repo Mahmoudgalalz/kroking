@@ -1,0 +1,60 @@
+[
+  {
+  "highlighted": true,
+  "name": "Hi.new",
+  "favicon":"https://hi.new/img/favicon.png",
+  "description": "Hi is your preprocessor email, enjoy your same mailbox, but more clear inbox with spam, allowlist and paywall.",
+  "link":"https://hi.new",
+  "insights":{
+    "Visitors / MO": "+5k",
+    "Account Reg.":"+1k",
+    "Spams Prevented":"+10K"
+  },
+  "company":"Onboardbase"
+  },
+  {
+    "highlighted": true,
+    "name": "Salamy",
+    "favicon":"https://salamy.space/favicon.png",
+    "description": "Salamy is a first Mental Health specialized website in the MENA Region",
+    "link":"https://salamy.space",
+    "insights":{
+      "Visitors / MO": "+100k",
+      "Article":"+2k"
+    },
+    "company":"Brandria"
+  },
+  {
+    "highlighted": true,
+    "name": "Surge Action",
+    "description": "Github Action that allow you to automate Client-side deployment using Surge.sh",
+    "github":"https://github.com/mahmoudgalalz/surge-action"
+  },
+  {
+    "name": "bash-scripts",
+    "description": "My utils that I rely on for my daily work",
+    "github":"https://github.com/Mahmoudgalalz/bash-util"
+  },
+  
+  {
+    "name": "Global-Env",
+    "description": "Updating your Envs at runtime",
+    "github":"https://github.com/Onboardbase/global-env"
+  },
+  {
+    "name": "Nudgeer Safe",
+    "description": "Construct your security headers in sec",
+    "github":"https://github.com/Onboardbase/nudgeer-safe"
+  },
+  {
+    "name": "ghtop",
+    "description": "Best Practise example for Rate-limiting",
+    "github":"https://github.com/Mahmoudgalalz/ghtop"
+  },
+  {
+    "name": "Nudgeer Action",
+    "description": "Check your security headers as smoke test",
+    "github":"https://github.com/Onboardbase/nudgeer-action"
+  }
+
+]
