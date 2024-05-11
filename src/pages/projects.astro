@@ -1,6 +1,25 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-
-
+import projects from "@/data/projects.json"
+import { ProjectCard, TinyProjectCard} from "@/components/Projects"
 ---
-<Layout title="Projects"></Layout>
+<Layout title="Projects">
+  <h1 class="font-bold">Projects Board</h1>
+  <section class="flex flex-col text-white/70 leading-5 tracking-wide space-y-1  text-sm font-light mt-4 ">
+		<p>I have built apps from scratch and take technical decisions.
+		At the companies I worked for, and also as individual within a diversion in tech stacks, and also talented ideas to come out, and tooling products that improve developers experience.</p>
+	</section>
+  <div class="flex flex-col my-10 gap-3">
+    {projects.map(project=>{
+      return <ProjectCard client:load project={project} />
+    })}
+  </div>
+  <div class="text-sm opacity-70">
+    Projects that I was intersted to build, ideas that comes and got out as products
+  </div>
+  <div class="flex flex-col my-4 gap-3">
+    {projects.map(project=>{
+      return <TinyProjectCard client:load project={project} />
+    })}
+  </div>
+</Layout>
