@@ -11,7 +11,6 @@ import {
 import BookMeet from "./BookMeet"
 
 export default function Nav({path}:{path:string}){
-  console.log(path.substring(0,path.length-1))
   const pages = [
     {
       href:'/',
