@@ -1,5 +1,20 @@
 [
   {
+    "company":"Trusty Collectors",
+    "title":"Senior Software Engineer",
+    "stack":"Typescript, Nextjs, NestJS, Nginx, NodeJS, AWS, CloudFlare Workers,Jest, API Gateway, Github Actions",
+    "description":"I joined Trusty Collectors as a Backend Engnieer then promoted to Senior Software Engineer to build and maintain their projects where we build tools for developers and compaines to secure their secrets, Maintained Nudgeer, its package and github-action, to 3rd top product on PH which is hi.new",
+    "location":"Cairo, Egypt",
+    "start":"Oct 2024",
+    "end":"Present",
+    "contributions":[
+      "Built and Led a Legal System to manage cases and documents",
+      "Enahnced the CI/CD pipeline to be more cost-effective",
+      "Contributed and refactored MoneyCollecting system, including test coverage from 0 to 80%",
+      "Built an Algorithm that get related cases from each others, by names to help collectors to reach the case faster, leded to increse the collecting rate by 44%"
+    ]
+  },
+  {
     "company":"Onboardbase",
     "title":"Software Engineer",
     "stack":"Typescript, Nextjs, NuxtJS, NestJS, Go, Nginx, VueJs, React, AWS, CloudFlare Workers, Github Actions",

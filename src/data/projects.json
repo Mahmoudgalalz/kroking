@@ -1,5 +1,28 @@
 [
   {
+    "highlighted": true,
+    "name": "CRCL",
+    "favicon":"https://crclevents.com/favicon.ico",
+    "description": "Arcitecture and built CRCL with the whole application, and led a team of 4 as freelacne project, was responsible about the Core API system",
+    "link":"https://crclevents.com",
+    "insights":{
+      "Active Users / MO": "+20k",
+      "Revenue / MO": "+10k USD",
+      "Event Created.":"50+"
+    }
+  },
+  {
+    "highlighted": true,
+    "name": "fomotechno",
+    "favicon":"https://fomotechno.org/favicon.ico",
+    "description": "Built the Mentoring platform from arcticture to production, for a client",
+    "link":"https://fomotechno.org",
+    "insights":{
+      "Visitors / MO": "+5k",
+      "Account Reg.":"+1k"
+    }
+  },
+  {
   "highlighted": true,
   "name": "Hi.new",
   "favicon":"https://hi.new/img/favicon.png",
