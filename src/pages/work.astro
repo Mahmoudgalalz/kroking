@@ -1,20 +1,48 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import WorkCard from "../components/Work.tsx"
-import Hire from "../components/Hire.tsx"
-import experiences from "../data/work.json"
+import Layout from "@/layouts/Layout.astro";
+import Timeline from "@/components/Timeline.tsx";
+import CareerHeatmap from "@/components/CareerHeatmap.tsx";
+import Section from "@/components/Section.astro";
+import { education, roles } from "@/data/career";
+import { totalActiveMonths } from "@/lib/careerMap";
 
+const months = totalActiveMonths();
 ---
-<Layout title="Employment History">
-  <h1 class="font-bold">Employment History</h1>
-  <section class="flex flex-col text-white/70 leading-5 tracking-wide space-y-1  text-sm font-light mt-4 ">
-		<p>I have been professionally working for more than 2 years.
-		Where I built apps from scratch in different tech stacks, also working on tooling products that improve developers experience, and security tools.</p>
-	</section>
-  <div class="flex flex-col my-10 gap-3">
-    <Hire client:only="React"/>
-    {experiences.map(experience=>{
-      return <WorkCard client:load experience={experience} />
-    })}
-  </div>
+
+<Layout
+  title="Career"
+  description="Seven roles across fintech, developer tools, security, commerce and healthcare — what I built at each."
+>
+  <header class="space-y-3">
+    <h1 class="text-xl font-semibold tracking-tight text-white/95">Career</h1>
+    <p class="max-w-2xl text-sm leading-relaxed text-white/60">
+      {roles.length} roles over {(months / 12).toFixed(1)} years, several of them running at the same
+      time. Every card opens into what I actually shipped there — not responsibilities, outcomes.
+    </p>
+  </header>
+
+  <Section id="map" title="The same career, as heat" note="Click a month to see what was in flight.">
+    <CareerHeatmap client:visible />
+  </Section>
+
+  <Section id="roles" title="Role by role">
+    <Timeline client:load />
+  </Section>
+
+  <Section id="education" title="Education">
+    <div class="rounded-lg border border-white/[0.07] bg-white/[0.02] p-3">
+      <h3 class="text-sm text-white/90">{education.degree}</h3>
+      <p class="mt-0.5 text-[11px] text-white/35">{education.school} · GPA {education.gpa}</p>
+      <ul class="mt-2 space-y-1">
+        {
+          education.notes.map((n) => (
+            <li class="flex gap-2 text-xs leading-relaxed text-white/55">
+              <span class="mt-[7px] h-1 w-1 shrink-0 rounded-full bg-amber-400/50" />
+              <span>{n}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </Section>
 </Layout>

@@ -1,25 +1,34 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import projects from "@/data/projects.json"
-import { ProjectCard, TinyProjectCard} from "@/components/Projects"
+import ProjectBoard from "@/components/ProjectBoard.tsx";
+import LiveRepos from "@/components/LiveRepos.tsx";
+import Section from "@/components/Section.astro";
+import { profile } from "@/data/profile";
 ---
-<Layout title="Projects">
-  <h1 class="font-bold">Projects Board</h1>
-  <section class="flex flex-col text-white/70 leading-5 tracking-wide space-y-1  text-sm font-light mt-4 ">
-		<p>I have built apps from scratch and take technical decisions.
-		At the companies I worked for, and also as individual within a diversion in tech stacks, and also talented ideas to come out, and tooling products that improve developers experience.</p>
-	</section>
-  <div class="flex flex-col my-10 gap-3">
-    {projects.map(project=>{
-      return <ProjectCard client:load project={project} />
-    })}
-  </div>
-  <div class="text-sm opacity-70">
-    Projects that I was intersted to build, ideas that comes and got out as products
-  </div>
-  <div class="flex flex-col my-4 gap-3">
-    {projects.map(project=>{
-      return <TinyProjectCard client:load project={project} />
-    })}
-  </div>
+
+<Layout
+  title="Projects"
+  description="Platforms I architected, products I shipped, and the small open-source tools I keep reaching for."
+>
+  <header class="space-y-3">
+    <h1 class="text-xl font-semibold tracking-tight text-white/95">Projects</h1>
+    <p class="max-w-2xl text-sm leading-relaxed text-white/60">
+      Platforms I architected end-to-end, products that reached real users, and the small tools I
+      open-sourced because I got tired of rewriting them.
+    </p>
+  </header>
+
+  <Section id="board" title="The board" note="Filter by domain.">
+    <ProjectBoard client:load />
+  </Section>
+
+  <Section
+    id="fresh"
+    title="Fresh from GitHub"
+    note="Most recently pushed public repos, live."
+    href={profile.links.github}
+    hrefLabel="Full profile"
+  >
+    <LiveRepos client:visible />
+  </Section>
 </Layout>

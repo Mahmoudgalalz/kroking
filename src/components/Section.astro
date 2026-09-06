@@ -1,0 +1,25 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  note?: string;
+  href?: string;
+  hrefLabel?: string;
+}
+const { id, title, note, href, hrefLabel } = Astro.props;
+---
+
+<section id={id} class="scroll-mt-6 py-7">
+  <div class="mb-3 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+    <h2 class="text-sm font-semibold tracking-tight text-white/90">{title}</h2>
+    {note && <p class="text-[11px] text-white/35">{note}</p>}
+    {
+      href && (
+        <a href={href} class="ml-auto text-[11px] text-amber-400/60 transition-colors hover:text-amber-300">
+          {hrefLabel ?? "See all"} →
+        </a>
+      )
+    }
+  </div>
+  <slot />
+</section>
